@@ -16,7 +16,6 @@ if [ ! -d "$BUILD_DIR/$APP_ROOT" ]; then
   exit 1
 fi
 
-ls $BUILD_DIR/$APP_ROOT
 #build static file
 cd $BUILD_DIR/$APP_ROOT
 yarn build
