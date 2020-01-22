@@ -10,6 +10,7 @@ if [ ! -f "$ENV_DIR/APP_ROOT" ]; then
 fi
 
 APP_ROOT="$(cat "$ENV_DIR/APP_ROOT")"
+REACT_APP_API_URL="$(cat "$ENV_DIR/REACT_APP_API_URL")"
 
 if [ ! -d "$BUILD_DIR/$APP_ROOT" ]; then
   echo "No project found at $APP_ROOT. Aborting."
