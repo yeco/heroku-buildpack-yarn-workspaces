@@ -11,6 +11,8 @@ fi
 
 APP_ROOT="$(cat "$ENV_DIR/APP_ROOT")"
 export REACT_APP_API_URL="$(cat "$ENV_DIR/REACT_APP_API_URL")"
+export REACT_APP_GA_TRACKING_ID="$(cat "$ENV_DIR/REACT_APP_GA_TRACKING_ID")"
+
 echo "======== $REACT_APP_API_URL ========"
 if [ ! -d "$BUILD_DIR/$APP_ROOT" ]; then
   echo "No project found at $APP_ROOT. Aborting."
